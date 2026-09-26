@@ -1,85 +1,122 @@
 <!DOCTYPE html>
 <html lang="sq">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InfoPoint Albania</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body{
-            margin:0;
-            font-family:Arial,sans-serif;
-            height:100vh;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            overflow:hidden;
-            background:#000;
-        }
+<title>InfoPoint Albania</title>
 
-        /* Flamuri shqiptar në gjithë ekranin */
-        .flag-bg{
-            position:fixed;
-            inset:0;
-            background-image:url("https://upload.wikimedia.org/wikipedia/commons/3/36/Flag_of_Albania.svg");
-            background-size:cover;
-            background-position:center;
-            opacity:0.25;
-            animation:wave 6s infinite ease-in-out;
-            z-index:0;
-        }
+<style>
 
-        /* shtresë e errët për lexim më të mirë */
-        .overlay{
-            position:fixed;
-            inset:0;
-            background:rgba(0,0,0,0.25);
-            z-index:1;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        .box{
-            text-align:center;
-            position:relative;
-            z-index:2;
-            color:white;
-        }
+body{
+    height:100vh;
+    font-family:Arial, sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    background:#000;
+}
 
-        h1{
-            color:#d62828;
-            font-size:48px;
-            text-shadow:2px 2px 5px #000;
-        }
 
-        p{
-            font-size:20px;
-            color:white;
-            text-shadow:2px 2px 5px #000;
-        }
+/* Flamuri ne gjithe ekranin */
+.flag-bg{
+    position:fixed;
+    inset:0;
+    background-image:url("https://upload.wikimedia.org/wikipedia/commons/3/36/Flag_of_Albania.svg");
+    background-size:cover;
+    background-position:center;
+    opacity:0.45;
+    animation:wave 8s infinite ease-in-out;
+    z-index:0;
+}
 
-        @keyframes wave{
-            0%{
-                transform:scale(1) skewX(0deg);
-            }
-            50%{
-                transform:scale(1.08) skewX(3deg);
-            }
-            100%{
-                transform:scale(1) skewX(0deg);
-            }
-        }
 
-    </style>
+/* shtrese transparente */
+.overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.15);
+    z-index:1;
+}
+
+
+/* kutia e tekstit */
+.box{
+    position:relative;
+    z-index:2;
+    text-align:center;
+    padding:40px;
+}
+
+
+h1{
+    color:white;
+    font-size:55px;
+    letter-spacing:2px;
+    text-shadow:
+    3px 3px 8px #000;
+}
+
+
+p{
+    margin-top:20px;
+    color:white;
+    font-size:22px;
+    text-shadow:
+    2px 2px 6px #000;
+}
+
+
+/* animacion flamuri */
+@keyframes wave{
+
+0%{
+    transform:scale(1) skewX(0deg);
+}
+
+50%{
+    transform:scale(1.08) skewX(4deg);
+}
+
+100%{
+    transform:scale(1) skewX(0deg);
+}
+
+}
+
+
+</style>
+
 </head>
+
 
 <body>
 
+
 <div class="flag-bg"></div>
+
 <div class="overlay"></div>
 
+
 <div class="box">
-    <h1>🇦🇱 InfoPoint Albania</h1>
-    <p>Website is under construction.</p>
+
+<h1>🇦🇱 InfoPoint Albania</h1>
+
+<p>
+Platforma juaj e informacionit për Shqipërinë.
+<br>
+Së shpejti online...
+</p>
+
 </div>
+
 
 </body>
 </html>
