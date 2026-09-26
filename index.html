@@ -1,122 +1,129 @@
 <!DOCTYPE html>
 <html lang="sq">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>InfoPoint Albania</title>
+<title>InfoPoint Albania | Zbulo Shqipërinë</title>
 
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    height:100vh;
-    font-family:Arial, sans-serif;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    overflow:hidden;
-    background:#000;
-}
-
-
-/* Flamuri ne gjithe ekranin */
-.flag-bg{
-    position:fixed;
-    inset:0;
-    background-image:url("https://upload.wikimedia.org/wikipedia/commons/3/36/Flag_of_Albania.svg");
-    background-size:cover;
-    background-position:center;
-    opacity:0.45;
-    animation:wave 8s infinite ease-in-out;
-    z-index:0;
-}
-
-
-/* shtrese transparente */
-.overlay{
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,0.15);
-    z-index:1;
-}
-
-
-/* kutia e tekstit */
-.box{
-    position:relative;
-    z-index:2;
-    text-align:center;
-    padding:40px;
-}
-
-
-h1{
-    color:white;
-    font-size:55px;
-    letter-spacing:2px;
-    text-shadow:
-    3px 3px 8px #000;
-}
-
-
-p{
-    margin-top:20px;
-    color:white;
-    font-size:22px;
-    text-shadow:
-    2px 2px 6px #000;
-}
-
-
-/* animacion flamuri */
-@keyframes wave{
-
-0%{
-    transform:scale(1) skewX(0deg);
-}
-
-50%{
-    transform:scale(1.08) skewX(4deg);
-}
-
-100%{
-    transform:scale(1) skewX(0deg);
-}
-
-}
-
-
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
-
 
 <body>
 
 
-<div class="flag-bg"></div>
+<header>
 
-<div class="overlay"></div>
+<div class="logo">
+🇦🇱 InfoPoint Albania
+</div>
+
+<nav>
+<a href="#">Kryefaqja</a>
+<a href="#">Turizëm</a>
+<a href="#">Lajme</a>
+<a href="#">Destinacione</a>
+<a href="#">Kontakt</a>
+</nav>
+
+</header>
 
 
-<div class="box">
 
-<h1></h1>
+<section class="hero">
+
+<div>
+
+<h1>
+Zbulo Shqipërinë
+</h1>
 
 <p>
-Platforma juaj e informacionit për Shqipërinë.
-<br>
-Së shpejti online...
+Informacion • Turizëm • Kulturë • Histori
+</p>
+
+<button>
+Eksploro Shqipërinë
+</button>
+
+</div>
+
+</section>
+
+
+
+<section class="cards">
+
+
+<div>
+
+<h2>🏔 Destinacione</h2>
+
+<p>
+Nga Alpet Shqiptare deri në Rivierën Joniane.
+Zbulo vendet më të bukura të Shqipërisë.
 </p>
 
 </div>
 
 
+
+<div>
+
+<h2>📰 Lajme</h2>
+
+<p>
+Informohu me zhvillimet, historitë dhe ngjarjet kryesore.
+</p>
+
+</div>
+
+
+
+<div>
+
+<h2>📸 Media</h2>
+
+<p>
+Foto, video dhe pamje ajrore nga bukuritë shqiptare.
+</p>
+
+</div>
+
+
+</section>
+
+
+
+
+<section class="about">
+
+<h2>
+Pse InfoPoint Albania?
+</h2>
+
+<p>
+Një platformë moderne për të promovuar Shqipërinë,
+turizmin, kulturën dhe informacionin në një vend.
+</p>
+
+</section>
+
+
+
+<footer>
+
+<p>
+© 2026 InfoPoint Albania 🇦🇱
+</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
