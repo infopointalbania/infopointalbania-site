@@ -252,7 +252,10 @@ font-size:42px;
 .cards{
 
 flex-direction:column;
-
+.logo img{
+    height:60px;
+    width:auto;
+}
 align-items:center;
 
 }
