@@ -53,8 +53,7 @@ linear-gradient(
 rgba(0,0,0,.55),
 rgba(0,0,0,.55)
 ),
-url("images/logo.png")
-center/cover;
+#222;
 
 
     display:flex;
