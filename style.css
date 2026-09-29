@@ -55,11 +55,10 @@ nav a:hover{
 
     height:85vh;
 
-    background:
-    linear-gradient(
-    rgba(0,0,0,.55),
-    rgba(0,0,0,.55)
-    ),
+    background-image: url("https://infopointalbania.com/images/hero.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
    url("https://infopointalbania.com/images/hero.jpg") center/cover;
 
 
